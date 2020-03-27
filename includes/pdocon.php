@@ -2,7 +2,7 @@
 class Pdocon {
 
     // Database Information:
-        private $host       = "fscappserver";
+        private $host       = "localhost";
         private $user       = "xfhbbaqwxr";
         private $pass       = "V3K2XgpGtk";
         private $dbnm       = "xfhbbaqwxr";
