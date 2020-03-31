@@ -200,7 +200,7 @@ tr:nth-child(even) {
 <button type="button" class="dropdown-btn">Event Type<i class="fa fa-caret-down"></i></button>
 <div class="dropdown-content">
 <input type="submit" name="fsc" value="FSC">
-<input type="submit" name="club" value="Club">
+<input type="submit" name="clubs" value="Clubs">
 <input type="submit" name="athletics" value="Athletics">
 <input type="submit" name="tutoring" value="Tutoring">
 <input type="submit" name="academics" value="Academics">
@@ -275,10 +275,10 @@ if ($row) {
         $db->bindValue(':FSC', $event_Type, PDO::PARAM_STR);
         $row = $db->fetchMultiple();
 	} 
-	else if (isset($_GET['club'])) {
-        $event_Type = 'Club';
-        $db->query('SELECT * FROM events WHERE event_Type =:club');
-        $db->bindValue(':club', $event_Type, PDO::PARAM_STR);
+	else if (isset($_GET['clubs'])) {
+        $event_Type = 'Clubs';
+        $db->query('SELECT * FROM events WHERE event_Type =:clubs');
+        $db->bindValue(':clubs', $event_Type, PDO::PARAM_STR);
         $row = $db->fetchMultiple();
 	} 
 	else if (isset($_GET['athletics'])) {
